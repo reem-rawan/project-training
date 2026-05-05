@@ -1,0 +1,71 @@
+.admin-page {
+  direction: rtl;
+  padding: 30px;
+  font-family: "Tajawal", sans-serif;
+  background: #ffffff;
+  min-height: 80vh;
+  margin-top: 90px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* تصميم الجدول */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.admin-table th {
+  background: #0b2b6f;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+}
+
+.admin-table td {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+}
+
+.admin-table tr:hover {
+  background: #f0f4ff;
+}
+
+/* أزرار الإجراءات */
+.edit-btn,
+.delete-btn {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.edit-btn {
+  background: #0a5d41;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #0a8f68;
+}
+
+.delete-btn {
+  background: #6e1414;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #6e0909;
+}

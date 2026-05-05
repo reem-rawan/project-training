@@ -1,0 +1,116 @@
+/* StudentProfile.css */
+
+/* الحاوية التي تضمن توسيط المربع في منتصف الصفحة */
+.student-profile-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 80px); /* خصم ارتفاع النيف بار لضمان التوسيط */
+    padding: 20px;
+    background-color: #f4f7f6; /* خلفية الصفحة هادئة لتمييز المربع */
+    direction: rtl; /* اتجاه الكتابة لليمين */
+}
+
+/* المربع الأبيض الأساسي (The Card) */
+.profile-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 650px; /* عرض المربع */
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* ظل ناعم */
+    border: 1px solid #eef0f2;
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.main-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #0a4b78; /* لونك المعتمد */
+    margin-bottom: 8px;
+}
+
+.description {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* شبكة توزيع الحقول: حقلين في كل صف */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px; /* المسافة بين الحقول */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2b4c7e;
+}
+
+.form-group input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    font-size: 14px;
+    background: #fdfdfd;
+    transition: 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #0a4b78;
+    box-shadow: 0 0 0 3px rgba(10, 75, 120, 0.1);
+}
+
+/* جعل السيرة الذاتية تأخذ الصف كاملاً */
+.file-upload-group {
+    grid-column: span 2;
+    margin-top: 5px;
+}
+
+.file-input {
+    background: white;
+    border: 1px dashed #0a4b78 !important; /* شكل مميز لرفع الملفات */
+    cursor: pointer;
+}
+
+/* زر الحفظ */
+.save-btn {
+    width: 100%;
+    margin-top: 30px;
+    background-color: #0a4b78;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.save-btn:hover {
+    background-color: #002d51;
+}
+
+/* تجاوب التصميم مع الجوال */
+@media (max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr; /* حقل واحد في الصف */
+    }
+    .file-upload-group {
+        grid-column: span 1;
+    }
+}

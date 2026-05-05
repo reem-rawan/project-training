@@ -1,0 +1,104 @@
+/* تنسيق أساسي لإزالة أي أطراف افتراضية من المتصفح */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f4f7f6; 
+}
+
+.student-dashboard {
+    padding: 100px 5% 40px; 
+    direction: rtl;
+    min-height: 100vh;
+    width: 100%;
+    color: #0a4b78;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+/* --- تعديل قسم الوظائف لتظهر المربعات بجانب بعضها --- */
+.jobs-list {
+    display: grid;
+    /* التعديل الجوهري: توزيع الأعمدة لتناسب حجم الشاشة وتصف المربعات بجانب بعضها */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 25px; /* مسافة كافية بين المربعات لتبدو مرتبة */
+    width: 100%;
+    max-width: 1200px; /* تحديد العرض الكلي لتجنب تمدد المربعات بشكل مفرط */
+    margin: 0 auto;
+}
+
+.job-card {
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    border: 1px solid #eee;
+    /* يضمن بقاء العناصر داخل المربع متناسقة حتى لو اختلف طول النص */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 28px; 
+}
+
+/* ستايل زر عرض التفاصيل داخل المربع */
+.details-btn {
+    margin-top: 15px;
+    background: #2b4c7e;
+    color: white;
+    border: none;
+    padding: 9px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.details-btn:hover {
+    background: #0a4b78;
+}
+
+/* --- تنسيقات الكليات --- */
+.colleges-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.college-btn {
+    background: #2b4c7e;
+    color: #ffffff;
+    border: none;
+    width: 160px;
+    height: 60px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.college-btn:hover {
+    background: #1a3052;
+}
+
+/* تيجان العناوين */
+.main-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 800px;
+    text-align: center;
+}

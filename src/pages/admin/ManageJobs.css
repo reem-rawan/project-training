@@ -1,0 +1,77 @@
+.admin-page {
+  direction: rtl;
+  padding: 40px;
+  font-family: "Tajawal", sans-serif;
+  background: #f5f7fa;
+  min-height: 100vh;
+  margin-top: 40px; /* ينزل الصفحة تحت شوي */
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* تصميم الجدول */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.admin-table th {
+  background: #0c4b82;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+}
+
+.admin-table td {
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+  color: #222; /* يخلي الكلام يبان */
+}
+
+.admin-table tr:hover {
+  background: #f0f4ff;
+}
+
+/* أزرار الإجراءات */
+.edit-btn,
+/* زر التعديل */
+.edit-btn {
+  background: #09895f;   /* أخضر جميل */
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.edit-btn:hover {
+  background: #075f44;   /* أخضر أغمق عند المرور */
+}
+
+/* زر الحذف */
+.delete-btn {
+  background: #931818;   /* أحمر واضح */
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background: #590d0d;   /* أحمر أغمق عند المرور */
+}

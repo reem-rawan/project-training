@@ -1,0 +1,62 @@
+.navbar {
+  width: 100%;
+  background: #0a4b78; /* اللون الأزرق الخاص بك */
+  color: #f1f3f4;
+  padding: 10px 5px;
+  display: flex;
+  /* توزيع العناصر: الأول يمين (الروابط) والثاني يسار (الشعار) */
+  justify-content: space-between; 
+  align-items: center;
+  direction: rtl; /* لضمان التنسيق العربي */
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px; /* مسافة متناسقة بين الروابط */
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #add8e6; /* تلميح لوني عند التمرير */
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3);
+}
+
+.nav-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 90px; /* حجم مناسب للشعار */
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px; /* لمسة جمالية للحواف */
+}
+
+/* تنسيق خاص لرابط تسجيل الخروج إذا أردت تمييزه */
+.logout-btn-link {
+  color: #ffcccc !important; 
+}
+
+.logout-btn-link:hover {
+  color: #ff4d4d !important;
+  text-decoration: underline;
+}
+
+/* لضمان عدم اختفاء محتوى الصفحة تحت الـ Navbar الثابت */
+body {
+  padding-top: 70px; 
+}

@@ -1,0 +1,81 @@
+/* صندوق تسجيل الدخول */
+.login-container {
+  width: 360px;
+  margin: 87px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* عنوان الصفحة */
+.login-container h2 {
+  color: #000;
+  margin-bottom: 20px;
+}
+
+/* الحقول */
+.login-container input,
+.login-container select {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: 1px solid #c7c5c5;
+  font-size: 16px;
+  box-sizing: border-box;
+  background: #fff;
+  color: #111;
+  transition: 0.2s;
+}
+
+/* عند الضغط (Focus) */
+.login-container input:focus,
+.login-container select:focus {
+  outline: none;
+  background: #eaf2ff; /* أزرق فاتح مثل الصورة */
+  border: 1px solid #b8c8e6;
+  box-shadow: 0 0 0 2px rgba(43, 76, 126, 0.15);
+}
+
+/* placeholder */
+.login-container input::placeholder {
+  color: #777;
+}
+
+/* الزر */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #2b4c7e;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: 0.2s;
+}
+
+/* عند المرور أو الضغط */
+.login-btn:hover {
+  background: #223b63;
+}
+
+.login-btn:active,
+.login-btn:focus {
+  background: #2b4c7e;
+  box-shadow: none;
+}
+
+/* نسيت كلمة المرور */
+.forgot-pass {
+  margin-top: 12px;
+  color: #555;
+  font-size: 14px;
+}
+
+.forgot-pass:hover {
+  color: #2b4c7e;
+}
