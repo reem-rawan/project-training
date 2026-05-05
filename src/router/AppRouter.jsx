@@ -3,7 +3,7 @@ import { Routes, Route, Navigate, Outlet } from "react-router-dom";
 
 // --- المكونات المشتركة ---
 import Navbar from "../components/Navbar"; 
-import CompanyNavbar from "../components/CompanyNavbar";
+import CompanyNavbar from "../components/CompanyNavbar.jsx";
 
 // --- تسجيل الدخول ---
 import Login from "../pages/login/login"; 
