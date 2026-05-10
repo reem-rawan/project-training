@@ -19,7 +19,7 @@ export default function Login() {
 
     try {
       // إرسال البيانات للباك اند باستخدام الرابط الذي زودتك به أريام
-const response = await axios.post("https://project-training-production.up.railway.app", {
+const response = await axios.post("https://project-training-production.up.railway.app/api/login", {
   email: email,
   password: password,
   role: userType,
